@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ficha_evaluacions",
+  "info": {
+    "singularName": "ficha-evaluacion",
+    "pluralName": "ficha-evaluacions",
+    "displayName": "Ficha Evaluacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "fecha_evaluacion": {
+      "type": "date"
+    }
+  }
+}

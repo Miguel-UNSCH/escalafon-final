@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "descanso_medicos",
+  "info": {
+    "singularName": "descanso-medico",
+    "pluralName": "descanso-medicos",
+    "displayName": "Descanso Medico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Particular",
+        "Por cuenta de vacaciones",
+        "Permiso por familiar"
+      ]
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    },
+    "dependencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contrato_practis",
+  "info": {
+    "singularName": "contrato-practi",
+    "pluralName": "contrato-practis",
+    "displayName": "Contrato_practi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "condicion_laboral": {
+      "type": "enumeration",
+      "enum": [
+        "Profesional",
+        "Pre Profesional"
+      ]
+    },
+    "convenio": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "desde": {
+      "type": "date"
+    },
+    "hasta": {
+      "type": "date"
+    }
+  }
+}

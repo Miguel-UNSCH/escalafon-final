@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiencia_laborals",
+  "info": {
+    "singularName": "experiencia-laboral",
+    "pluralName": "experiencia-laborals",
+    "displayName": "Experiencia Laboral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "centro_labor": {
+      "type": "string"
+    },
+    "dependencia_oficina": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    },
+    "fecha_emision": {
+      "type": "date"
+    }
+  }
+}

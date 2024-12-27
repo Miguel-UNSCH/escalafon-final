@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unidad_estructuradas",
+  "info": {
+    "singularName": "unidad-estructurada",
+    "pluralName": "unidad-estructuradas",
+    "displayName": "Unidad Estructurada"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_unidad": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

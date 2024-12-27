@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contrato_dls",
+  "info": {
+    "singularName": "contrato-dl",
+    "pluralName": "contrato-dls",
+    "displayName": "contrato_dl",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "resolucion": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "nivel_remuneracion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nivel-remuneracion.nivel-remuneracion"
+    },
+    "pap": {
+      "type": "string"
+    },
+    "cnp": {
+      "type": "string"
+    },
+    "fecha_ingreso": {
+      "type": "date"
+    },
+    "anios_servicio": {
+      "type": "integer"
+    },
+    "fecha_cese": {
+      "type": "date"
+    }
+  }
+}

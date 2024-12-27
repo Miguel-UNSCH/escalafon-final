@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estado_civils",
+  "info": {
+    "singularName": "estado-civil",
+    "pluralName": "estado-civils",
+    "displayName": "Estado Civil"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_est_civil": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

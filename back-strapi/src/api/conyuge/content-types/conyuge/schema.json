@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conyuges",
+  "info": {
+    "singularName": "conyuge",
+    "pluralName": "conyuges",
+    "displayName": "Conyuge",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "apellido_paterno": {
+      "type": "string"
+    },
+    "apellido_materno": {
+      "type": "string"
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "lugar_nacimiento": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubigeo.ubigeo"
+    },
+    "grado_instruccion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grado-instruccion.grado-instruccion"
+    },
+    "profesion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profesion.profesion"
+    },
+    "ocupacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ocupacion.ocupacion"
+    },
+    "centro_trabajo": {
+      "type": "string"
+    }
+  }
+}

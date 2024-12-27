@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grado_instruccions",
+  "info": {
+    "singularName": "grado-instruccion",
+    "pluralName": "grado-instruccions",
+    "displayName": "Grado Instruccion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_grado": {
+      "type": "string"
+    }
+  }
+}

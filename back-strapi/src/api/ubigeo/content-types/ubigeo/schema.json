@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ubigeos",
+  "info": {
+    "singularName": "ubigeo",
+    "pluralName": "ubigeos",
+    "displayName": "Ubigeo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "departamento": {
+      "type": "string",
+      "required": true
+    },
+    "provincia": {
+      "type": "string",
+      "required": true
+    },
+    "distrito": {
+      "type": "string",
+      "required": true
+    },
+    "cod_dep": {
+      "type": "string"
+    },
+    "cod_pro": {
+      "type": "string"
+    },
+    "cod_dis": {
+      "type": "string"
+    }
+  }
+}

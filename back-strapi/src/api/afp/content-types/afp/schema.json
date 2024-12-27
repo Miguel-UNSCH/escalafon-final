@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "afps",
+  "info": {
+    "singularName": "afp",
+    "pluralName": "afps",
+    "displayName": "Afp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_afp": {
+      "type": "string"
+    }
+  }
+}

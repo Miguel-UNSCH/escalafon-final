@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ascensos",
+  "info": {
+    "singularName": "ascenso",
+    "pluralName": "ascensos",
+    "displayName": "Ascenso"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "resolucion": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "del_cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "al_cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "del_nivel_remuneracion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nivel-remuneracion.nivel-remuneracion"
+    },
+    "al_nivel_remuneracion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nivel-remuneracion.nivel-remuneracion"
+    },
+    "del_pap_cnp": {
+      "type": "string"
+    },
+    "al_pap_cnp": {
+      "type": "string"
+    },
+    "dependencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    }
+  }
+}

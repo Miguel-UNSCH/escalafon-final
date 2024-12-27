@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regimen_pensionarios",
+  "info": {
+    "singularName": "regimen-pensionario",
+    "pluralName": "regimen-pensionarios",
+    "displayName": "Regimen Pensionario"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_regimen": {
+      "type": "string"
+    }
+  }
+}

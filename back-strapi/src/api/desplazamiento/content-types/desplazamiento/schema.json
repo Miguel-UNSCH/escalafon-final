@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "desplazamientos",
+  "info": {
+    "singularName": "desplazamiento",
+    "pluralName": "desplazamientos",
+    "displayName": "Desplazamiento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Rotación interna",
+        "Rotación voluntaria",
+        "Reasignación",
+        "Designación",
+        "Destaque",
+        "Permuta",
+        "Encargar"
+      ]
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "fecha_desplazamiento": {
+      "type": "date"
+    },
+    "de_oficina": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "a_oficina": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    }
+  }
+}

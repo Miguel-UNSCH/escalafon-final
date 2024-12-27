@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personal_discapacitados",
+  "info": {
+    "singularName": "personal-discapacitado",
+    "pluralName": "personal-discapacitados",
+    "displayName": "Personal Discapacitado"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "tipo": {
+      "type": "string"
+    }
+  }
+}

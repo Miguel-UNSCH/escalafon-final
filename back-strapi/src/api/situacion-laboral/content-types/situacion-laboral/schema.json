@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "situacion_laborals",
+  "info": {
+    "singularName": "situacion-laboral",
+    "pluralName": "situacion-laborals",
+    "displayName": "Situacion Laboral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_sit_lab": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

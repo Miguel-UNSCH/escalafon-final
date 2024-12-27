@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "constancia_pagos",
+  "info": {
+    "singularName": "constancia-pago",
+    "pluralName": "constancia-pagos",
+    "displayName": "Constancia Pago"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "dependencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "nivel_remuneracion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nivel-remuneracion.nivel-remuneracion"
+    },
+    "pap": {
+      "type": "string"
+    },
+    "cnp": {
+      "type": "string"
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    }
+  }
+}

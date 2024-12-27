@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capacitaciones",
+  "info": {
+    "singularName": "capacitacion",
+    "pluralName": "capacitaciones",
+    "displayName": "Capacitacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "centro_capacitacion": {
+      "type": "string"
+    },
+    "materia": {
+      "type": "string"
+    },
+    "profesion_especialidad": {
+      "type": "string"
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    },
+    "horas_lectivas": {
+      "type": "decimal"
+    },
+    "fecha_emision": {
+      "type": "date"
+    },
+    "certificado": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

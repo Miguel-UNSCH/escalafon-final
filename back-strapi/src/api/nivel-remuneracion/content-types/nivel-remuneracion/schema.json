@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nivel_remuneracions",
+  "info": {
+    "singularName": "nivel-remuneracion",
+    "pluralName": "nivel-remuneracions",
+    "displayName": "Nivel Remuneracion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_nivel": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profesions",
+  "info": {
+    "singularName": "profesion",
+    "pluralName": "profesions",
+    "displayName": "Profesion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_profesion": {
+      "type": "string"
+    }
+  }
+}

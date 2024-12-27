@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estudios",
+  "info": {
+    "singularName": "estudio",
+    "pluralName": "estudios",
+    "displayName": "Estudio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "formacion_academica": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grado-instruccion.grado-instruccion"
+    },
+    "nombre_institucion": {
+      "type": "string"
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    },
+    "profesion_especialidad": {
+      "type": "string"
+    },
+    "facultad": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hijos",
+  "info": {
+    "singularName": "hijo",
+    "pluralName": "hijos",
+    "displayName": "Hijo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "apellido_paterno": {
+      "type": "string"
+    },
+    "apellido_materno": {
+      "type": "string"
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "lugar_nacimiento": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubigeo.ubigeo"
+    },
+    "edad": {
+      "type": "integer"
+    },
+    "grado_instruccion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grado-instruccion.grado-instruccion"
+    }
+  }
+}

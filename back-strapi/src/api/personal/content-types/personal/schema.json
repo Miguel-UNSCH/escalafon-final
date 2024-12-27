@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personals",
+  "info": {
+    "singularName": "personal",
+    "pluralName": "personals",
+    "displayName": "Personal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "apellido_paterno": {
+      "type": "string"
+    },
+    "apellido_materno": {
+      "type": "string"
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Femenino"
+      ]
+    },
+    "edad": {
+      "type": "integer"
+    },
+    "dni_ce": {
+      "type": "string"
+    },
+    "num_autogenerado": {
+      "type": "string"
+    },
+    "lic_conducir": {
+      "type": "string"
+    },
+    "grupo_sanguineo": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "AB",
+        "O"
+      ]
+    },
+    "fecha_ingreso": {
+      "type": "date"
+    },
+    "unidad_estructurada": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "lugar_nacimiento": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubigeo.ubigeo"
+    },
+    "nacionalidad": {
+      "type": "string"
+    },
+    "domicilio": {
+      "type": "string"
+    },
+    "interior": {
+      "type": "string"
+    },
+    "lugar_residencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubigeo.ubigeo"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "discapacidad": {
+      "type": "boolean",
+      "default": false
+    },
+    "regimen_pensionario": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::regimen-pensionario.regimen-pensionario"
+    },
+    "afp": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::afp.afp"
+    },
+    "situacion_laboral": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::situacion-laboral.situacion-laboral"
+    },
+    "estado_civil": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::estado-civil.estado-civil"
+    }
+  }
+}

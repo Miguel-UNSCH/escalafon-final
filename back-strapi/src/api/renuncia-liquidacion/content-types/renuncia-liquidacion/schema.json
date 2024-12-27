@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "renuncia_liquidacions",
+  "info": {
+    "singularName": "renuncia-liquidacion",
+    "pluralName": "renuncia-liquidacions",
+    "displayName": "Renuncia Liquidacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "motivo_renuncia": {
+      "type": "string"
+    },
+    "fecha_renuncia": {
+      "type": "date"
+    },
+    "dependencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    }
+  }
+}

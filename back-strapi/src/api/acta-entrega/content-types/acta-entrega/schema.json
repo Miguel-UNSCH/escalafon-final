@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acta_entregas",
+  "info": {
+    "singularName": "acta-entrega",
+    "pluralName": "acta-entregas",
+    "displayName": "Acta Entrega"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "recibe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "documento": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "dependencia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unidad-estructurada.unidad-estructurada"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "del": {
+      "type": "date"
+    },
+    "al": {
+      "type": "date"
+    }
+  }
+}

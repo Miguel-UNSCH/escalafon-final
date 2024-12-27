@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ocupacions",
+  "info": {
+    "singularName": "ocupacion",
+    "pluralName": "ocupacions",
+    "displayName": "Ocupacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_ocupacion": {
+      "type": "string"
+    }
+  }
+}

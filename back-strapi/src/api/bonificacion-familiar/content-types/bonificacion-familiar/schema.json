@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bonificacion_familiars",
+  "info": {
+    "singularName": "bonificacion-familiar",
+    "pluralName": "bonificacion-familiars",
+    "displayName": "Bonificacion Familiar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::personal.personal"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "resolucion": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
